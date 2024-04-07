@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment 4 by Darshit Soneji</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            
+            <nav class="nav1">
+                <h1> Darshit's Sindhi Cuisine</h1>
+                <a href="#">Home</a>
+                <a href="#">Locations </a>
+                <a href="#">Restaurant Menu</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact</a>
+            </nav>
+
+        </header>
+        <section class="sec1">
+            <div class="div1">
+            <br> <br>
+            <img class="box1" src="Images/image1.jpg" height="400" width="500" alt="Restaurant image 1">
+            <p class="box2">  </p>
+        </div>
+        </section>
+        <section class="sec2">
+            <div class="div2">
+            <br> <br>
+            <p class="box3"> Sindhi food, specially prepared with natural flavours   </p>
+            <img class="box4" src="Images/image2.jpg" height="400" width="500" alt="Restaurant image 1">
+            
+        </div>
+        </section>
+        <section class="sec3">
+            <div class="div3">
+            <br> <br>
+           
+            <img class="box5" src="Images/image3.jpg" height="400" width="500" alt="Restaurant image 1">
+            <p class="box6"> Handcrafted food made with love.  </p>
+        </div>
+        </section>
+        <section class="sec4">
+            <h1> Book a table </h1>
+            <form action="" method="get" onsubmit="return checkScript()">
+                <label> Name: <input type="text" id="txtName"></label>
+                <span id="msg"></span><br><br>
+                
+                <label for="expiry"> Date of reservation:</label><br><br>
+                <input type="date" id="expiry"> <br><br>
+                <span id="msg"></span>
+            </form>
+        
+            <form action="" method="get" onsubmit="return checkScript()">
+                <select id="selectTable">
+                     <option value="-1">Select number of persons</option>
+                     <option value="1"> 1</option>
+                     <option value="2"> 2</option>
+                     <option value="3"> 3</option>
+                     <option value="4"> 4</option>
+                     <option value="5"> 5</option>
+                </select>
+                 <span id="msg"></span><br><br>
+                 <input type="submit" value="Submit">
+             </form>
+             <script>
+                 function checkScript()
+                 {
+                     var index = document.getElementById("selectTable").selectedIndex;
+                     var msg = document.getElementById("msg");
+     
+                     if(index == 0)
+                     {
+                         msg.innerHTML = "All fields are required";
+                         return false;
+                     }
+                     else{
+                         return true;
+                     }
+                 }
+             </script>
+        </section>
+        <footer>
+            <div class="main">
+            <div class="div4">
+                <p> Quick Links </p> <br>
+
+                <a href="#">Home</a>
+                <a href="#">Locations </a>
+                <a href="#">Restaurant Menu</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact</a>
+            </div>
+
+            
+            <div class="div5">
+                <p> Contact Us</p> <br>
+                <p> Phone: 437-799-2505 <br>
+                    Email:<a href="mailto:.darshit'sSindhiCuisine@">  darshitSoneji@darshit'sSindhiCuisine.ca </a> <br>
+                    Address : 200 Malta Ave., Brampton, Ontario L6Y 6H8
+                </p>
+            </div>
+        </div>
+        </footer>
+    </body>
+
+</html>
